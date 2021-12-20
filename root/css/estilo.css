@@ -1,0 +1,200 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*
+.gridContainer{
+
+}*/
+.rowFlex{
+    display: flex; /*flex sobre padre*/
+    flex-direction: row;
+    flex-wrap: nowrap; /*hijos se adaptan*/
+    width: 100%;
+    justify-content: center;
+    font-size: large;
+}
+.navFlex{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: flex-end;
+    
+}
+
+/* menu top*/
+.navFlex li {list-style-type: none;
+
+    padding: 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    color: rgb(41, 41, 41);}
+.navFlex li a {text-decoration: none;}
+.navFlex__item1{order: 1;}
+.navFlex__item2{order: 2;}
+.navFlex__item3{order: 3;}
+.navFlex__item4{order: 4;}
+.navFlex__item5{order: 5;}
+
+.headerFlex{
+    text-align: center;  
+    color: rgb(4, 56, 50);
+    font-size: 60pt;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.border{
+    border:1px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+body{
+    background-color:#FAF2F2;
+    color: rgb(22, 21, 21);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+
+h1{
+    color:rgb(58, 55, 55);
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    color: rgb(4, 56, 50);
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+}
+h3{
+    color: rgb(4, 56, 50);
+    font-family: monospace;
+    text-align:left;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 3rem;
+    font-weight: lighter;
+    font-size: 14px;
+}
+h4{
+    color:rgb(58, 55, 55);
+    text-align:center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+
+
+/* quiero transformarlo. aun no pude sobreponer texto sobre imagen de otra forma */
+.newInFlex {
+    position: relative;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  
+}
+/* Top left text del container NewIn*/
+.NewInButton{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    color: rgb(169, 209, 204);
+    font-size: 40pt;
+}
+/*boton descubrir NewIn*/
+.descubrirButton{
+    position: absolute;
+    top: 170px;
+    left: 330px;
+    color: rgb(169, 209, 204);
+    font-size: 10pt;
+}
+.sectionVideoGrid{
+    display: grid;
+    grid-template-rows: 0.1fr 2fr;
+    grid-template-columns: 100%;
+     align-content: center;
+    /*
+    position:relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    */
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(4, 56, 50);
+    font-size: 12pt;
+}
+.sectionGrid{
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.listaFlex1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    
+}
+.listaFlex1{list-style-type: none; 
+padding: 10px;}
+.listaFlex1 li {text-decoration: none;}
+.listaFlex1__item1{order: 1;}
+.listaFlex1__item2{order: 2;} 
+
+
+
+
+.sectionFlex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    image-rendering: crisp-edges;
+}
+
+/*footer*/
+.footerFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*parte footer*/
+.copyR{
+    color: dimgray;
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* PALETA */
+:root {
+  --New-Swatch: #4E4E4E;
+  --New-Swatch: #528D74;
+  --New-Swatch: #E4741E;
+  --New-Swatch: #F7CA49;
+  --New-Swatch: #F7CE8E;
+  --New-Swatch: #F7DFDF;
+}
+
