@@ -8,6 +8,8 @@
 .gridContainer{
 
 }*/
+
+
 .rowFlex{
     display: flex; /*flex sobre padre*/
     flex-direction: row;
@@ -88,15 +90,18 @@ h3{
     margin-left: 1rem;
     margin-right: 3rem;
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 1rem;
 }
 h4{
-    color:rgb(58, 55, 55);
-    text-align:center;
-    margin-top: 1rem;
+    color: rgb(4, 56, 50);
+    font-family: monospace;
+    text-align:left;
+    margin-top: 2rem;
     margin-bottom: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1rem;
+    margin-right: 3rem;
     font-weight: lighter;
+    font-size: 1rem;
 }
 
 
@@ -173,21 +178,6 @@ padding: 10px;}
     image-rendering: crisp-edges;
 }
 
-/*footer*/
-.footerFlex{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-/*parte footer*/
-.copyR{
-    color: dimgray;
-    text-align: center;
-    font-size: 0.7rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
 /* PALETA */
 :root {
   --New-Swatch: #4E4E4E;
@@ -197,4 +187,67 @@ padding: 10px;}
   --New-Swatch: #F7CE8E;
   --New-Swatch: #F7DFDF;
 }
+/*ANIMACION*/
+h3::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
 
+h3:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h3::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgb(116, 126, 131);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+h3 {
+  position: relative;
+  font-size: 1rem;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}
+
+/*footer*/
+.footerFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*parte footer*/
+.copyR{
+    color: dimgray;
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
